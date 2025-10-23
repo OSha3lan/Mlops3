@@ -15,3 +15,8 @@ stages:
     deps:
     - train_forest.py
     - data/preprocessed_churn.csv
+  tune:
+    cmd: python tune.py
+    deps:
+    - tune.py
+    - data/preprocessed_churn.csv
