@@ -1,12 +1,12 @@
 stages:
   preprocess:
     cmd: python preprocess.py
-  deps:
-   - preprocess.py
-  outs:
-   - data/preprocessed_churn.csv
+    deps:
+      - preprocess.py
+    outs:
+    - data/preprocessed_churn.csv
   train:
     cmd: python train_logistic.py
-  deps:
-  - train_logistic.py
-  - data/preprocessed_churn.csv
+    deps:
+    - train_logistic.py
+    - data/preprocessed_churn.csv
