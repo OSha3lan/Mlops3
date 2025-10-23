@@ -1,0 +1,4 @@
+# Ignore MLflow tracking data
+ /mlruns
+# Ignore the saved model file from train.py
+ /model.joblib
