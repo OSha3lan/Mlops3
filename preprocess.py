@@ -1,6 +1,8 @@
 import pandas as pd
 import sys
 import os
+from dotenv import load_dotenv
+load_dotenv()
  
  # URL for the Telco Customer Churn dataset
 url = 'https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv'

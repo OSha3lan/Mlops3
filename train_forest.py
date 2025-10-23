@@ -1,6 +1,8 @@
+from dotenv import load_dotenv
+load_dotenv()
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, roc_auc_score
 import mlflow
 import joblib  # Used for saving and loading scikit-learn models

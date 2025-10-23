@@ -2,3 +2,5 @@
  /mlruns
 # Ignore the saved model file from train.py
  /model.joblib
+# Ignore environment variables file
+ /.env
