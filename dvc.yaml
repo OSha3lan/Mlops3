@@ -10,3 +10,8 @@ stages:
     deps:
     - train_logistic.py
     - data/preprocessed_churn.csv
+  train_forest:
+    cmd: python train_forest.py
+    deps:
+    - train_forest.py
+    - data/preprocessed_churn.csv
